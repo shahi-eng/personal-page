@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: animateBackground 3s linear infinite;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00);
+    background-size: 200% 200%;
+  }
+  
+  @keyframes animateBackground 
+  {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; 
+  }
+  
+
+  .side-bar
+  {
+    width: 70px;
+    height: 350px;
+    background-color: white;
+    opacity: 0.99;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-top: 100px;
+    box-shadow: -5px 0px 30px black;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+        .sidebar-icons
+      {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        cursor: pointer;
+      }
+
+      .sidebar-icons:hover
+      {
+        box-shadow: 0px 0px 10px rgb(52, 188, 127);
+      }
+
+      .sidebar-icons:active
+      {
+        box-shadow: 0px 0px 10px rgb(186, 188, 52);
+      }
+
+  .personal-plot 
+  {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    opacity: 0.99;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: -20px;
+    box-shadow: 0px 0px 30px black;
+    position: relative;
+    z-index: 2;
+
+  }
+  
+  .aboutme
+  {
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+  }
+
+  
+
+  .myname
+  {
+    font-size: 20px;
+    color: black;
+  }
+
+  .my-pic
+  {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    clip-path: polygon(0% 0%, 1% 0%, 100% 0%, 100% 70%, 50% 90%, 0% 70%);
+
+
+    object-position: bottom;
+
+  }
+
+  .name-text
+  {
+    font-size: 30px;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 900;
+    color: rgb(34, 121, 83);
+    
+
+    text-align: center;
+    margin-top: -15px;
+    margin-left: -5px;
+  }
+
+  .profession-text
+  {
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 900;
+    color: rgb(52, 188, 127);
+
+    text-align: center;
+    margin-top: -25px;
+    margin-left: -5px;
+  }
+
+.social-space
+{
+  height: 70px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    align-items: center;
+}
+
+
+  .social-icons
+  {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: 0px 0px 10px rgb(88, 89, 89);
+    margin: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+    .social-icons:hover
+    {
+      box-shadow: 3px 5px 20px rgb(20, 80, 53);
+    }
+
+    .social-icons:active
+    {
+      box-shadow: 0px 0px 30px rgb(251, 255, 12);
+    }
+
+
+
+
+
+
+
+  .two-icons
+  {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .download-cv
+  {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+
+.contact-me
+   {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+    }
+
+  .download-cv-button
+  {
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(52, 188, 127);
+    box-shadow: 1px 1px 10px rgb(78, 79, 79);
+
+    cursor: pointer;
+  }
+
+      .download-cv-button:hover
+      {
+        box-shadow: 3px 5px 20px rgb(20, 80, 53);
+      }
+
+      .download-cv-button:active
+      {
+        box-shadow: 3px 5px 30px rgb(214, 224, 22);
+      }
+
+        .download-cv-img
+        {
+          width: 45px;
+          height: 25px;
+        }
+
+  .contact-me-button
+  {
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(52, 188, 127);
+    box-shadow: 1px 1px 10px rgb(78, 79, 79);
+
+    cursor: pointer;
+  }
+
+      .contact-me-button:hover
+      {
+        box-shadow: 3px 5px 20px rgb(20, 80, 53);
+      }
+
+      .contact-me-button:active
+      {
+        box-shadow: 3px 5px 30px rgb(214, 224, 22);
+      }
+
+.contact-me-txt
+{
+  padding: 10px;
+}
+
+
+  .material-symbols-outlined 
+  {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 0,
+    'GRAD' 0,
+    'opsz' NaN;
+  }
+ 
+
